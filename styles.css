@@ -1,0 +1,169 @@
+:root {
+    --main-color: rgb(250, 100, 0);
+    --complementary-color: rgb(0, 100, 250);
+    --base-color: rgb(0, 0, 0);
+    --shadow-color: rgb(200, 200, 200);
+}
+
+html {
+    max-width: 1500px;
+    margin: auto;
+    box-shadow: 5px 0 8px var(--shadow-color), -5px 0 8px var(--shadow-color);
+}
+
+/*Bootstrap customization - NAVBAR*/
+
+.navbar-custom {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.navbar-custom .navbar-nav .nav-item  {
+    max-width: 330px;    
+}
+
+.navbar-custom .navbar-nav .nav-link, .navbar-custom .nav .nav-link {
+    color: var(--base-color);
+}
+
+.navbar-custom .nav-item:hover .nav-link {
+    color: var(--base-color);
+    text-decoration: underline;
+}
+
+.navbar-custom .nav .nav-link:hover {
+    color: var(--main-color);
+}
+
+.nav {
+    position: absolute;
+    top: 0; right: 0;
+    padding: 0.5rem;
+}
+
+.nav .chat-whatsapp i {
+    transform: scale(1.5);
+}
+
+.nav span {
+    position: absolute;
+    top: 4rem;
+    border-radius: 10px 0;
+}
+
+/*Bootstrap customization - WELCOME SECTION*/
+
+.bg-custom-1 {
+    height: 70vh;
+    min-height: 500px;
+    background: url(welcome-back.jpeg);
+    background-position: left 20% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.welcome-section .carousel .carousel-indicators li {
+    margin-bottom: -0.5rem;
+    width: 0.7rem; height: 0.7rem;
+    border-radius: 50%;
+}
+
+.welcome-section .carousel .carousel-inner .carousel-item {
+    margin-top: 5rem;
+    padding: 1rem;
+    background-color: rgba(250, 250, 250, 0.5);
+}
+
+.titles {
+    font-size: 130%;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: var(--complementary-color);
+}
+
+.company-name {
+    font-size: 200%;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.slogan {
+    font-size: 90%;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+/*Bootstrap customization - PRODUCTS SECTION*/
+
+.product-info, .product-carousel {
+    min-width: 600px;
+    width: 50vw;
+}
+
+.product-carousel {
+    max-height: 500px;
+}
+
+.product-info-title {
+    font-size: 160%;
+}
+
+.product-info-esqueme1 {
+    padding-bottom: 1rem;
+    width: 40%;
+}
+
+.product-info-esqueme2 {
+    padding-bottom: 1rem;
+    height: 75px;
+}
+
+.product-card {
+    width: 600px;
+}
+
+@media (max-width: 600px) {
+
+    .product-info, .product-carousel {
+        min-width: 100vw;
+    }
+
+    .product-info-esqueme1 {
+        width: 220px;
+    }
+
+    .product-info-esqueme2 {
+        height: 60px;
+    }
+
+    .product-card {
+        width: 100vw;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .product-card {
+        height: 520px;
+    }
+}
+
+/*Bootstrap customization - FOOTER*/
+
+.social-media-icon {
+    margin: 0 1.5rem;
+    color: var(--basic-color);
+}
+
+.social-media-icon:hover {
+    color: var(--main-color);
+}
+
+.copyright-info {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.copyright-info a {
+    color: var(--basic-color);
+}
+
+
+
